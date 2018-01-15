@@ -6,8 +6,8 @@
 (setq x-super-keysym 'alt
       x-alt-keysym   'meta
 
-      user-mail-address "henrik@lissner.net"
-      user-full-name    "Henrik Lissner"
+      user-mail-address "maikf@qu.cx"
+      user-full-name    "Maik Fischer"
 
       +org-dir (expand-file-name "~/work/org/")
       org-ellipsis " ▼ "
