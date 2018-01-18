@@ -10,19 +10,19 @@
       user-full-name    "Maik Fischer"
 
       +org-dir (expand-file-name "~/work/org/")
-      org-ellipsis " ▼ "
 
       ;; doom-variable-pitch-font (font-spec :family "Fira Sans")
       ;; doom-unicode-font (font-spec :family "Input Mono Narrow" :size 12)
-      doom-big-font (font-spec :family "Fira Mono" :size 19))
 
+      doom-font (font-spec :family "Fira Mono" :size 7.0)
+      doom-variable-pitch-font (font-spec :family "Fira Sans")
+      doom-unicode-font (font-spec :family "DejaVu Sans Mono")
+      doom-big-font (font-spec :family "Fira Mono" :size 14.0))
 
 (pcase (system-name)
   ((or "proteus" "halimede")
    (setq ivy-posframe-font (font-spec :family "Input Mono Narrow" :size 16)
-         ivy-height 12))
-  (_
-   (setq doom-font (font-spec :family "Input Mono Narrow" :size 12 :weight 'semi-light))))
+         ivy-height 12)))
 
 ;;
 (doom! :feature
