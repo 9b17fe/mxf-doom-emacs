@@ -61,27 +61,24 @@
           ("mime:image/*" "Messages with images" ?p)))
 
   (setq smtpmail-stream-type 'starttls
-        smtpmail-default-smtp-server "smtp.gmail.com"
-        smtpmail-smtp-server "smtp.gmail.com"
-        smtpmail-smtp-service 587)
+        smtpmail-default-smtp-server "lab.qu.cx"
+        smtpmail-smtp-server "lab.qu.cx"
+        smtpmail-smtp-service 587
+        +email-mu4e-mail-path "~/Maildir"
+        mu4e-view-html-plaintext-ratio-heuristic 200
+        mu4e-headers-fields '((:human-date . 10)
+                              (:flags . 4)
+                              (:from . 25)
+                              (:subject . nil)))
 
-  (set! :email "gmail.com"
-    '((mu4e-sent-folder       . "/gmail.com/Sent Mail")
-      (mu4e-drafts-folder     . "/gmail.com/Drafts")
-      (mu4e-trash-folder      . "/gmail.com/Trash")
-      (mu4e-refile-folder     . "/gmail.com/All Mail")
-      (smtpmail-smtp-user     . "hlissner")
-      (user-mail-address      . "hlissner@gmail.com")
-      (mu4e-compose-signature . "---\nHenrik")))
-
-  (set! :email "lissner.net"
-    '((mu4e-sent-folder       . "/lissner.net/Sent Mail")
-      (mu4e-drafts-folder     . "/lissner.net/Drafts")
-      (mu4e-trash-folder      . "/lissner.net/Trash")
-      (mu4e-refile-folder     . "/lissner.net/All Mail")
-      (smtpmail-smtp-user     . "henrik@lissner.net")
-      (user-mail-address      . "henrik@lissner.net")
-      (mu4e-compose-signature . "---\nHenrik Lissner"))
+  (set! :email "qu.cx"
+    '((mu4e-sent-folder       . "/qu.cx/.Sent Messages")
+      (mu4e-drafts-folder     . "/qu.cx/.Drafts")
+      (mu4e-trash-folder      . "/qu.cx/.Trash")
+      (mu4e-refile-folder     . "/qu.cx/.All Mail")
+      (smtpmail-smtp-user     . "maikf")
+      (user-mail-address      . "maikf@qu.cx")
+      (mu4e-compose-signature . "---\nMaik")))
     t)
 
   ;; an evil-esque keybinding scheme for mu4e
