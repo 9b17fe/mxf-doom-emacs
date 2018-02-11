@@ -49,18 +49,6 @@
   ;; elegant, so we use those.
   (setq org-bullets-bullet-list '("#")))
 
-;; app/irc
-(after! circe
-  (setq +irc-notifications-watch-strings '("v0" "vnought" "hlissner"))
-
-  (set! :irc "irc.snoonet.org"
-    `(:tls t
-      :nick "v0"
-      :port 6697
-      :sasl-username ,(+pass-get-user "irc/snoonet.org")
-      :sasl-password ,(+pass-get-secret "irc/snoonet.org")
-      :channels (:after-auth "#ynought"))))
-
 ;; app/email
 (after! mu4e
   (setq mu4e-bookmarks
