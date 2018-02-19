@@ -78,7 +78,7 @@
       (mu4e-refile-folder     . "/qu.cx/.All Mail")
       (smtpmail-smtp-user     . "maikf")
       (user-mail-address      . "maikf@qu.cx")
-      (mu4e-compose-signature . "---\nMaik")))
+      (mu4e-compose-signature . "---\nMaik"))
     t)
 
   ;; an evil-esque keybinding scheme for mu4e
