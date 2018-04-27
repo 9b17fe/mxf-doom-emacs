@@ -11,6 +11,7 @@
 
       +doom-modeline-buffer-file-name-style 'relative-from-project
       show-trailing-whitespace t
+
       ;; mu4e
       mu4e-maildir        (expand-file-name "~/Maildir/")
       mu4e-attachment-dir (expand-file-name "attachments" mu4e-maildir)
@@ -88,14 +89,14 @@
     ?S "Sign using gpg" "--gpg-sign=" #'magit-read-gpg-secret-key))
 
 ;; lang/org
-(setq org-directory (expand-file-name "~/work/org/")
+(setq org-directory (expand-file-name "~/Documents/org/")
       org-agenda-files (list org-directory)
-      org-ellipsis " ▼ "
-
-      ;; The standard unicode characters are usually misaligned depending on the
-      ;; font. This bugs me. Personally, markdown #-marks for headlines are more
-      ;; elegant.
-      org-bullets-bullet-list '("#"))
+      org-ellipsis " "
+      org-fontify-whole-heading-line nil)
+(remove-hook! 'org-mode-hook
+  #'(org-bullets-mode
+     org-indent-mode
+     doom|disable-line-numbers))
 
 ;; app/email
 (after! mu4e
