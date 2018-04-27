@@ -28,6 +28,17 @@
 ;;
 ;; Modules
 ;;
+(after! haskell-mode
+  (setq haskell-process-suggest-hoogle-imports t)
+  ;; I'm not entirely sure how much of this is needed for DevelMain.update
+  (setq haskell-process-type 'ghci
+        haskell-process-log t
+        haskell-process-path-ghci "stack"
+        haskell-process-use-ghci t
+        haskell-process-args-ghci '("ghci" "--with-ghc" "intero" "--no-load" "--no-build"))
+  (require 'haskell-interactive-mode)
+  (require 'haskell-process)
+  (add-hook 'haskell-mode-hook 'interactive-haskell-mode))
 
 ;; feature/evil
 (after! evil-mc
