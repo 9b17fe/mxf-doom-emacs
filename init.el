@@ -15,8 +15,8 @@
       ;; doom-unicode-font (font-spec :family "Input Mono Narrow" :size 12)
 
       doom-font (font-spec :family "Fira Mono" :size 7.0)
-      doom-variable-pitch-font (font-spec :family "Fira Sans")
-      doom-unicode-font (font-spec :family "DejaVu Sans Mono")
+      ;; doom-variable-pitch-font (font-spec :family "Fira Sans" :size 7.0)
+      doom-unicode-font (font-spec :family "DejaVu Sans Mono" :size 7.0)
       doom-big-font (font-spec :family "Fira Mono" :size 12.0))
 
 (pcase (system-name)
