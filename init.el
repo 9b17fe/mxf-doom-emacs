@@ -22,7 +22,7 @@
        doom
        doom-dashboard
        doom-modeline
-      ;doom-quit
+       doom-quit
        evil-goggles
       ;fci
        hl-todo
@@ -55,8 +55,8 @@
       ;gist              ; interacting with github gists
       ;macos             ; MacOS-specific commands
        magit             ;
-      ;make              ; run make tasks from Emacs
-       password-store    ; password manager for nerds
+       make              ; run make tasks from Emacs
+      ;password-store    ; password manager for nerds
       ;pdf               ; pdf enhancements
       ;prodigy           ; FIXME managing external services & code builders
       ;rgb               ; creating color strings
@@ -65,7 +65,7 @@
       ;wakatime
 
        :lang
-      ;assembly
+       assembly
        (cc +irony +rtags)
       ;crystal
       ;clojure
@@ -77,8 +77,8 @@
       ;elm
        emacs-lisp
       ;ess
-      ;go
-      ;(haskell +intero)
+       go
+       (haskell +intero)
       ;hy
       ;(java +meghanada)
        javascript
@@ -91,10 +91,10 @@
       ;nix
       ;ocaml
        (org +attach +babel +capture +export +present)
-      ;perl
-      ;php
+       perl
+       php
       ;plantuml
-      ;purescript
+       purescript
        python
        rest
       ;ruby
