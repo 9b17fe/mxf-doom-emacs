@@ -9,10 +9,6 @@
       x-super-keysym 'alt
       x-alt-keysym   'meta
 
-      ;; doom-variable-pitch-font (font-spec :family "Fira Sans")
-      ;; doom-unicode-font (font-spec :family "Input Mono Narrow" :size 12)
-      doom-big-font (font-spec :family "Fira Mono" :size 19)
-
       +doom-modeline-buffer-file-name-style 'relative-from-project
       show-trailing-whitespace t
       ;; mu4e
@@ -35,8 +31,10 @@
          ivy-posframe-font (font-spec :family "Input Mono Narrow" :size 12)
          doom-font (font-spec :family "Input Mono Narrow" :size 9)))
   (_
-   (setq ivy-posframe-font (font-spec :family "Input Mono Narrow" :size 18)
-         doom-font (font-spec :family "Input Mono Narrow" :size 12 :weight 'semi-light))))
+   (setq doom-font (font-spec :family "Fira Mono" :size 7.0)
+         doom-variable-pitch-font (font-spec :family "Fira Sans")
+         doom-unicode-font (font-spec :family "DejaVu Sans Mono" :size 7.0)
+         doom-big-font (font-spec :family "Fira Mono" :size 12.0))))
 
 (when IS-MAC
   (setq ns-use-thin-smoothing t)
