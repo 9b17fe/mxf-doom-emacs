@@ -9,6 +9,9 @@
       x-super-keysym 'alt
       x-alt-keysym   'meta
 
+      ;; don't warp my mouse around
+      posframe-mouse-banish nil
+
       +doom-modeline-buffer-file-name-style 'relative-from-project
       show-trailing-whitespace t
 
