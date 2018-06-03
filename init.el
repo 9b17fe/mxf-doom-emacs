@@ -13,8 +13,8 @@
        workspaces
 
        :completion
-       company
-       ivy
+       (company +auto +childframe)
+       (ivy +childframe)
       ;helm
       ;ido
 
