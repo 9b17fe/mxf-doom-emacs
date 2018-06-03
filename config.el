@@ -7,8 +7,8 @@
 
 (add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
 
-(setq user-full-name    "Henrik Lissner"
-      user-mail-address "henrik@lissner.net"
+(setq user-full-name    "Maik Fischer"
+      user-mail-address "maikf@qu.cx"
 
       ;; I've swapped these keys on my keyboard
       x-super-keysym 'alt
