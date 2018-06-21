@@ -1,5 +1,7 @@
 ;;; init.el -*- lexical-binding: t; -*-
 
+;; (if (daemonp) (setq use-package-always-demand t))
+
 (doom! :feature
       ;debugger
        eval
