@@ -26,6 +26,7 @@
 
 (setq-hook! 'minibuffer-setup-hook show-trailing-whitespace nil)
 
+(add-hook 'after-change-major-mode-hook #'goto-address-mode)
 
 ;;
 ;; Host-specific config
