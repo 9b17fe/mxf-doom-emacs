@@ -11,6 +11,9 @@
 
       ;; don't warp my mouse around
       posframe-mouse-banish nil
+      ;; let there be light!
+      doom-theme 'doom-one-light
+      doom-one-light-brighter-comments t
 
       +doom-modeline-buffer-file-name-style 'relative-from-project
       show-trailing-whitespace t
