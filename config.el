@@ -15,6 +15,11 @@
       doom-theme 'doom-one-light
       doom-one-light-brighter-comments t
 
+      ;; be more chill
+      blink-cursor-blinks 1
+      blink-cursor-interval 1
+      blink-cursor-delay 10
+
       +doom-modeline-buffer-file-name-style 'relative-from-project
       show-trailing-whitespace t
 
