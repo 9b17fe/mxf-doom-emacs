@@ -81,8 +81,11 @@
 ;; emacs/eshell
 (after! eshell
   (set-eshell-alias!
+   "q"   "quit-and-close"
+   "l"   "ls"
+   "ll"  "ls -l"
+   "la"  "ls -la"
    "f"   "find-file $1"
-   "l"   "ls -lh"
    "d"   "dired $1"
    "gl"  "(call-interactively 'magit-log-current)"
    "gs"  "magit-status"
