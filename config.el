@@ -33,6 +33,22 @@
 
 (add-hook 'after-change-major-mode-hook #'goto-address-mode)
 
+;; stolen and adapted from https://emacs.stackexchange.com/a/33523
+(advice-add 'message :before #'+mxf-message-with-timestamp)
+(defun +mxf-message-with-timestamp (fmt-string &rest args)
+  "Advice to run before `message' that prepends a timestamp to `*Messages*'.
+   It will not change the output in the minibuffer."
+  (if (and message-log-max
+           fmt-string
+           (not (string-empty-p fmt-string)))
+    (let ((deactivate-mark nil)
+          (inhibit-read-only t))
+      (with-current-buffer "*Messages*"
+        (goto-char (point-max))
+        (if (not (bolp))
+            (newline))
+        (insert (format-time-string "[%F %T.%2N] "))))))
+
 ;;
 ;; Host-specific config
 ;;
